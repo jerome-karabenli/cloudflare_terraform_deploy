@@ -1,0 +1,56 @@
+resource "cloudflare_record" "TXT_record_1_domain_1" {
+  zone_id = data.cloudflare_zone.domain_1.id
+  name    = var.cf_domain_1 
+  value   = var.cf_domain_1_TXT_1
+  type    = "TXT"
+  ttl     = 1
+  proxied = false
+}
+
+resource "cloudflare_record" "MX_record_1_domain_1" {
+  zone_id  = data.cloudflare_zone.domain_1.id
+  name     = var.cf_domain_1 
+  value    = var.cf_domain_1_MX_1
+  type     = "MX"
+  ttl      = 1
+  proxied  = false
+  priority = 10
+}
+
+resource "cloudflare_record" "MX_record_2_domain_1" {
+  zone_id = data.cloudflare_zone.domain_1.id
+  name    = var.cf_domain_1 
+  value   = var.cf_domain_1_MX_2
+  type    = "MX"
+  ttl     = 1
+  proxied = false
+  priority = 20
+}
+
+resource "cloudflare_record" "MX_record_3_domain_1" {
+  zone_id = data.cloudflare_zone.domain_1.id
+  name    = var.cf_domain_1 
+  value   = var.cf_domain_1_MX_3
+  type    = "MX"
+  ttl     = 1
+  proxied = false
+  priority = 50
+}
+
+resource "cloudflare_record" "TXT_record_2_domain_1" {
+  zone_id = data.cloudflare_zone.domain_1.id
+  name    = var.cf_domain_1 
+  value   = var.cf_domain_1_TXT_2
+  type    = "TXT"
+  ttl     = 1
+  proxied = false
+}
+
+resource "cloudflare_record" "TXT_record_3_domain_1" {
+  zone_id = data.cloudflare_zone.domain_1.id
+  name    = var.cf_domain_1_TXT_name_3
+  value   = var.cf_domain_1_TXT_value_3
+  type    = "TXT"
+  ttl     = 1
+  proxied = false
+}

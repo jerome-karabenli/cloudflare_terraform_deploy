@@ -8,8 +8,6 @@
 C'est un ensemble de modules [Terraform](https://www.terraform.io/) permettant de proteger son infrastructure derriere un __proxy__, créer et gerer ses __sous domaines__, mettre en place des __regles de sécurité__ et d'accès.\
 Certains modules sont obligatoires d'autres optionnels.
 
-Si vous n'etes pas familiarisé avec __Terraform__ ou __CloudFlare__ vous pouvez consulter [__cet article__](https://jkarabenli.dev/posts/manage-dns-cloudflare-terraform/).
-
 ## Stack utilisée
 * [Terraform](https://www.terraform.io/) 
 
@@ -27,6 +25,9 @@ Si vous n'etes pas familiarisé avec __Terraform__ ou __CloudFlare__ vous pouvez
 
 Voir les [issues en cours](https://github.com/jerome-karabenli/cloudflare_terraform_deploy/issues) pour voir la liste complete des fonctionalités proposées et les bugs existants.
 
+<!-- HOW TO -->
+## Documentation
+Vous trouverez [__un article sur mon blog__](https://jkarabenli.dev/posts/manage-dns-cloudflare-terraform/) expliquant l'utilisation des fichiers dans ce repo.
 
 <!-- CONTRIBUTING -->
 ## Contribuer

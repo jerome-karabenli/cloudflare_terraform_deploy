@@ -3,6 +3,7 @@ data "cloudflare_zone" "domain_1" {
 }
 
 # Par defaut j'ai activé toutes les sécurités possibles avec un compte gratuit
+# Doc https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs/resources/zone_settings_override
 resource "cloudflare_zone_settings_override" "domain_1" {
     zone_id = data.cloudflare_zone.domain_1.id
     settings {

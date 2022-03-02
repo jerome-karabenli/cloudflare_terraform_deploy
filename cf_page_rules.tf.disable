@@ -1,5 +1,6 @@
 # Simple redirection
 
+# Doc https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs/resources/page_rule
 resource "cloudflare_page_rule" "rule_1" {
  zone_id = data.cloudflare_zone.domain_1.id
  target = "exemple-origin.com/*"

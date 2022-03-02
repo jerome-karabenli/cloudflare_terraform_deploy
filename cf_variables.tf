@@ -4,6 +4,7 @@ variable "cf_api_user_service_key" {} # variables.auto.tfvars
 variable "cf_domain_1" {} # variables.auto.tfvars
 variable "cf_origin_ca_files_path_domain_1" {} # variables.auto.tfvars
 
+# Enregistrements DNS
 variable "cf_domain_1_A_1" {
     default = ""
 }
@@ -44,12 +45,8 @@ variable "cf_domain_1_A_10" {
     default = ""
 }
 
-# Si vous voulez faire pointer un sous domaine vers une vm cloud
-variable "cf_domain_1_oci_frankfurt_master_ip" {
-    default = ""
-}
-
-variable "cf_domain_1_oci_frankfurt_backup_ip" {
+# Si vous voulez faire pointer un sous domaine vers une vm cloud, renseigner l'IP ici
+variable "cf_domain_1_cloud_vm_ip" {
     default = ""
 }
 

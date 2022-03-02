@@ -14,6 +14,7 @@ resource "tls_cert_request" "domain_1" {
   }
 }
 
+# Doc https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs/resources/origin_ca_certificate
 resource "cloudflare_origin_ca_certificate" "domain_1" {
   csr                = tls_cert_request.domain_1.cert_request_pem
   hostnames          = [ "${ var.cf_domain_1 }", "*.${ var.cf_domain_1 }" ]
